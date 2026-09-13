@@ -46,16 +46,19 @@
 
 
 
-import { useState, useEffect } from "react";
+import { useState, useEffect} from "react";
 import "./login.css";
+import useLocalStroage from "./useLocalStroage";
 
 export default function Login() {
-  const [email, setEmail] = useState("");
+  // const [email, setEmail] = useState("");
+    const{email,setEmail}=useLocalStroage();
+
   const [password, setPassword] = useState("");
 
-  useEffect(() => {
-    localStorage.setItem("email", email);
-  }, [email]);
+
+
+
 
   return (
     <div className="login-container">
