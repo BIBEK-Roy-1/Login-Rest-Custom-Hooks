@@ -8,7 +8,6 @@ function App() {
 
   return (
     <div className="App">
-      <h1>Welcome!</h1>
       {form === "login" ? <Login /> : <Reset />}
       <button
         onClick={() => {
@@ -22,3 +21,5 @@ function App() {
 }
 
 export default App;
+
+
